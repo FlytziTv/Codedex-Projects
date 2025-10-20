@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Belle Table — Restaurant Menu</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      header {
+        text-align: center;
+        background-color: #b5651d;
+        color: white;
+        padding: 20px;
+      }
+      #header-img {
+        width: 100px;
+        border-radius: 50%;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+      }
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 15px;
+      }
+      h2 {
+        color: #b5651d;
+        border-bottom: 2px solid #b5651d;
+        padding-bottom: 5px;
+      }
+      article {
+        background: white;
+        padding: 10px;
+        margin: 15px 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      article img {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+      form {
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        background-color: #b5651d;
+        color: white;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #a05217;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #b5651d;
+        color: white;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        id="header-img"
+        src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+        alt="Restaurant Logo"
+      />
+      <h1>La Belle Table</h1>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order-form">Order Form</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="menu">
+        <h2>Menu</h2>
+
+        <article>
+          <img
+            src="https://www.pccmarkets.com/wp-content/uploads/2017/08/pcc-rosemary-grilled-salmon-flo.jpg"
+            alt="Grilled Salmon"
+          />
+          <h3>Grilled Salmon</h3>
+          <p>
+            Fresh Atlantic salmon grilled to perfection with a lemon butter
+            sauce. <em>$18.99</em>
+          </p>
+        </article>
+
+        <article>
+          <img
+            src="https://static01.nyt.com/images/2024/06/27/multimedia/DP-Pasta-Primaverarex-jklh/DP-Pasta-Primaverarex-jklh-mediumSquareAt3X.jpg"
+            alt="Pasta Primavera"
+          />
+          <h3>Pasta Primavera</h3>
+          <p>
+            A colorful mix of seasonal vegetables tossed with linguine and olive
+            oil. <em>$14.50</em>
+          </p>
+        </article>
+
+        <article>
+          <img
+            src="https://images.getrecipekit.com/20250325120225-how-20to-20make-20chocolate-20molten-20lava-20cake-20in-20the-20microwave.png?width=650&quality=90&"
+            alt="Chocolate Lava Cake"
+          />
+          <h3>Chocolate Lava Cake</h3>
+          <p>
+            Warm molten chocolate cake served with vanilla ice cream.
+            <em>$8.50</em>
+          </p>
+        </article>
+      </section>
+
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+          <label for="salmon">Grilled Salmon (Qty):</label>
+          <input type="number" id="salmon" name="salmon" min="0" value="0" />
+
+          <label for="pasta">Pasta Primavera (Qty):</label>
+          <input type="number" id="pasta" name="pasta" min="0" value="0" />
+
+          <label for="cake">Chocolate Lava Cake (Qty):</label>
+          <input type="number" id="cake" name="cake" min="0" value="0" />
+
+          <h3>Add-ons</h3>
+          <label
+            ><input type="checkbox" name="addons" value="bread" /> Extra Bread
+            Basket (+$3)</label
+          >
+          <label
+            ><input type="checkbox" name="addons" value="drink" /> Soft Drink
+            (+$2)</label
+          >
+
+          <h3>Choose a Side</h3>
+          <label
+            ><input type="radio" name="side" value="salad" required /> Garden
+            Salad</label
+          >
+          <label
+            ><input type="radio" name="side" value="fries" /> French
+            Fries</label
+          >
+
+          <label for="requests">Special Requests:</label>
+          <textarea
+            id="requests"
+            name="requests"
+            rows="4"
+            placeholder="Any allergies or preferences?"
+          ></textarea>
+
+          <input type="submit" value="Go To Checkout" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with love by <strong>alexis@codedex</strong></p>
+    </footer>
+  </body>
+</html>
