@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Alexis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <div class="logo">A</div>
+          <div>
+            <div style="font-weight: 700">Alexis</div>
+            <div class="muted" style="font-size: 13px">
+              Développeur · BTS SIO SLAM
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Navigation principale">
+          <a href="#about">À propos</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-left">
+          <h1>
+            Bonjour — je suis <span style="color: var(--accent)">Alexis</span>
+          </h1>
+          <p>
+            Étudiant en BTS SIO option SLAM — je crée des applications web
+            simples, propres et fonctionnelles. Mes techs préférées : HTML, CSS,
+            JavaScript, Node.js.
+          </p>
+          <a class="cta" href="#projects">Voir mes projets</a>
+        </div>
+        <div class="hero-right">
+          <div class="avatar">AX</div>
+        </div>
+      </section>
+
+      <div class="grid">
+        <div class="card" id="about">
+          <h3>À propos</h3>
+          <p class="muted">
+            Passionné par le développement web et l'algorithmie. Je construis
+            des projets personnels pour apprendre et expérimenter.
+          </p>
+          <div style="margin-top: 12px">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </div>
+
+        <div class="card" id="contact">
+          <h3>Contact</h3>
+          <p class="muted">
+            Intéressé par une collaboration ou une alternance ? Écris-moi :
+            <strong>alexis.dejesus019@gmail.com</strong>
+          </p>
+          <div style="margin-top: 12px">
+            <div class="muted">Réseaux</div>
+            <div class="socials">
+              <a href="#  ">LinkedIn</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Compétences</h3>
+          <ul class="muted" style="padding-left: 18px; margin: 8px 0 0 0">
+            <li>HTML & CSS (Responsive)</li>
+            <li>JavaScript / Node.js</li>
+            <li>Bases de données MySQL</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Disponibilité</h3>
+          <p class="muted">
+            Ouvert aux stages et alternances. Disponible pour des projets
+            étudiants ou freelances courts.
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <div class="muted">
+          © <span id="year"></span> Alexis — Portfolio simple
+        </div>
+        <div class="muted">Fait avec · HTML/CSS</div>
+      </footer>
+    </div>
+
+    <script>
+      // simple dynamic year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
